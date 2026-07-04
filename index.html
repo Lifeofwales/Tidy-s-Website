@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tidy's Tuner Shop</title>
+
+  <!-- MAIN CSS FILE -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- WEBSITE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===================================================== -->
+  <!-- TOP NAV BAR / LOGO AREA                               -->
+  <!-- ===================================================== -->
+  <header class="top-bar">
+    <div class="brand-left">
+      <!-- Change logo image here -->
+      <img src="tidys-logo.png" alt="Tidy's Tuner Shop Logo" class="logo" />
+      <div>
+        <h1>TIDY'S</h1>
+        <p>TUNER SHOP</p>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <!-- Change these links anytime -->
+      <a href="#best-car">Best Car</a>
+      <a href="#appointment">Book</a>
+      <a href="#upgrades">Upgrades</a>
+    </nav>
+  </header>
+
+  <!-- ===================================================== -->
+  <!-- HERO / MAIN BANNER                                    -->
+  <!-- ===================================================== -->
+  <section class="hero-section">
+    <!-- Change hero image here -->
+    <img src="tidys-hero.png" alt="Tidy's Hero Banner" class="hero-image" />
+
+    <div class="hero-overlay">
+      <p class="eyebrow">LOS SANTOS CUSTOM PERFORMANCE</p>
+      <h2>TIDY'S TUNER SHOP</h2>
+      <p class="hero-text">Clean builds, serious upgrades, and appointment-based service.</p>
+      <a href="#appointment" class="main-button">BOOK APPOINTMENT</a>
+    </div>
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- MAIN THREE CARD LAYOUT                                -->
+  <!-- Left: Best Car | Middle: Appointment | Right: Upgrades -->
+  <!-- ===================================================== -->
+  <main class="main-grid">
+
+    <!-- ===================================================== -->
+    <!-- BEST CAR OF THE WEEK SECTION                          -->
+    <!-- ===================================================== -->
+    <section class="card" id="best-car">
+      <div class="card-heading">
+        <span class="heading-line"></span>
+        <h2>BEST CAR OF THE WEEK</h2>
+      </div>
+
+      <!-- Change car image here -->
+      <img src="Banshee.png" alt="Best Car of the Week" class="car-image" />
+
+      <!-- Change best car info here -->
+      <h3>BRAVADO BANSHEE</h3>
+      <p class="muted-text">This week's cleanest street build. Sharp look, fast pull, and ready for the spotlight.</p>
+
+      <div class="info-row">
+        <span>Build Type</span>
+        <strong>Street / Track</strong>
+      </div>
+      <div class="info-row">
+        <span>Featured Price</span>
+        <strong>$230,000</strong>
+      </div>
+
+      <button class="outline-button" type="button">VIEW BUILD</button>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- BOOK APPOINTMENT SECTION                              -->
+    <!-- ===================================================== -->
+    <section class="card featured-card" id="appointment">
+      <div class="card-heading center-heading">
+        <span class="heading-line"></span>
+        <h2>BOOK APPOINTMENT</h2>
+      </div>
+
+      <p class="muted-text center-text">
+        Request a 1-on-1 appointment with a Tidy's technician.
+      </p>
+
+      <!-- Appointment form. Edit fields as needed. -->
+      <form id="appointmentForm" class="appointment-form">
+        <label for="customerName">Name</label>
+        <input id="customerName" name="customerName" type="text" placeholder="Enter your name" required />
+
+        <label for="vehicleName">Vehicle</label>
+        <input id="vehicleName" name="vehicleName" type="text" placeholder="Vehicle name" required />
+
+        <label for="serviceType">Service Needed</label>
+        <select id="serviceType" name="serviceType" required>
+          <option value="">Select service</option>
+          <option>Performance Upgrades</option>
+          <option>Cosmetic Upgrades</option>
+          <option>Full Build</option>
+          <option>Repair / Maintenance</option>
+          <option>Other</option>
+        </select>
+
+        <label for="timeSlot">Preferred Time</label>
+        <input id="timeSlot" name="timeSlot" type="text" placeholder="Example: 7PM - 10PM PST" />
+
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes" placeholder="Tell us what you need..."></textarea>
+
+        <button class="main-button full-button" type="submit">SUBMIT REQUEST</button>
+      </form>
+
+      <p id="formMessage" class="form-message"></p>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- UPGRADE PACKAGES SECTION                              -->
+    <!-- ===================================================== -->
+    <section class="card" id="upgrades">
+      <div class="card-heading">
+        <span class="heading-line"></span>
+        <h2>UPGRADES</h2>
+      </div>
+
+      <!-- Change upgrade names and prices here -->
+      <div class="upgrade-list">
+        <div class="upgrade-item">
+          <div>
+            <h3>PERFORMANCE PACKAGE</h3>
+            <p>Turbo, EMS, brakes, suspension</p>
+          </div>
+          <strong>$24,500</strong>
+        </div>
+
+        <div class="upgrade-item">
+          <div>
+            <h3>COSMETIC PACKAGE</h3>
+            <p>Paint, wheels, lighting, body kit</p>
+          </div>
+          <strong>$15,500</strong>
+        </div>
+
+        <div class="upgrade-item">
+          <div>
+            <h3>TRACK PACKAGE</h3>
+            <p>Race prep, suspension, brakes</p>
+          </div>
+          <strong>$28,000</strong>
+        </div>
+
+        <div class="upgrade-item">
+          <div>
+            <h3>STREET PACKAGE</h3>
+            <p>Balanced power and style setup</p>
+          </div>
+          <strong>$12,750</strong>
+        </div>
+      </div>
+
+      <a href="#appointment" class="outline-button link-button">BOOK FOR UPGRADES</a>
+    </section>
+
+  </main>
+
+  <!-- ===================================================== -->
+  <!-- FOOTER                                                -->
+  <!-- ===================================================== -->
+  <footer class="footer">
+    <p>© Tidy's Tuner Shop</p>
+    <p>Owner: Axel Steel</p>
+  </footer>
+
+  <!-- MAIN JAVASCRIPT FILE -->
+  <script src="script.js"></script>
+</body>
+</html>
